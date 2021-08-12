@@ -70,7 +70,25 @@ params:
 
     # home-info mode
     homeInfoParams:
-        Title: "--"
+        Title: "            _.._   _..---.
+         .-"    ;-"       \
+        /      /           |
+       |      |       _=   |
+       ;   _.-'\__.-')     |
+        `-'      |   |    ;
+                 |  /;   /      _,
+               .-.;.-=-./-""-.-` _`
+              /   |     \     \-` `,
+             |    |      |     |
+             |____|______|     |
+              \0 / \0   /      /
+           .--.-""-.`--'     .'
+          (#   )          ,  \
+          ('--'          /\`  \
+           \       ,,  .'      \
+            `-._    _.'\        \
+                `""`    \        \
+"
         Content: A rookie's journey into crypto, defi, and NFTs.
 
     socialIcons:
