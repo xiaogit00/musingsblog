@@ -50,7 +50,7 @@ params:
 
     label:
         text: "Musings On Defi"
-        icon: /apple-touch-icon.png
+        icon:
         iconHeight: 35
 
     # profile-mode
@@ -58,7 +58,7 @@ params:
         enabled: false # needs to be explicitly set
         title: Musings On Defi
         subtitle: "This is subtitle"
-        imageUrl: "<img location>"
+        imageUrl: "https://static.thenounproject.com/png/190536-200.png"
         imageWidth: 120
         imageHeight: 120
         imageTitle: my image
@@ -70,8 +70,8 @@ params:
 
     # home-info mode
     homeInfoParams:
-        Title: "Lei's blog"
-        Content: A beginner's journey into crypto, defi, and NFTs.
+        Title: "the defi night is dark and full of terrors"
+        Content: A rookie's journey into crypto, defi, and NFTs.
 
     socialIcons:
         - name: twitter
