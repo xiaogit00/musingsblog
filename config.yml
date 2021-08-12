@@ -70,7 +70,7 @@ params:
 
     # home-info mode
     homeInfoParams:
-        Title: "Lei's blog2"
+        Title: "Lei's blog"
         Content: A beginner's journey into crypto, defi, and NFTs.
 
     socialIcons:
