@@ -6,7 +6,7 @@ date: 2021-08-12T18:15:08+08:00
 tags: ["polygon"]
 author: "Lei"
 # author: ["Me", "You"] # multiple authors
-showToc: true
+showToc: false
 TocOpen: false
 draft: false
 hidemeta: false
