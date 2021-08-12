@@ -1,4 +1,4 @@
-baseURL: "http://www.musingsondefi.xyz/"
+baseURL: "https://www.musingsondefi.xyz/"
 title: Musings On Defi
 paginate: 5
 theme: PaperMod
