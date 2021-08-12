@@ -70,7 +70,7 @@ params:
 
     # home-info mode
     homeInfoParams:
-        Title: "the defi night is dark and full of terrors"
+        Title: "--"
         Content: A rookie's journey into crypto, defi, and NFTs.
 
     socialIcons:
