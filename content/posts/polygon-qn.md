@@ -32,6 +32,4 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-Where can I find useful, authoritative, insightful analysis of Polygon network?
-
-Hello fatin you are now live on my blog. Congratulations. U win 3000 bitcoin. 
+Where can I find useful, authoritative, insightful analysis of Polygon network?  
