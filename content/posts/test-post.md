@@ -1,10 +1,10 @@
 ---
-title: ""
+title: "Test Post"
 date: 2021-08-12T18:15:08+08:00
 # weight: 1
 # aliases: ["/first"]
 tags: ["first"]
-author: "Lei"
+author: "Leibing"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
@@ -32,4 +32,3 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-Where can I find useful, authoritative, insightful analysis of Polygon network?

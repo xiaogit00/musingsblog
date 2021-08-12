@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title}}"
-date: 2021-07-21T11:30:03+00:00
+date: {{ .Date }}
 # weight: 1
 # aliases: ["/first"]
 tags: ["first"]
