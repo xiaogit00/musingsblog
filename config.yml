@@ -2,6 +2,7 @@ baseURL: "https://www.musingsondefi.xyz/"
 title: Musings On Defi
 paginate: 5
 theme: PaperMod
+enableEmoji: true
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -50,7 +51,7 @@ params:
 
     label:
         text: "MUSINGS ON DEFI"
-        icon: 
+        icon:
         iconHeight: 35
 
     # profile-mode
