@@ -50,7 +50,7 @@ params:
 
     label:
         text: "MUSINGS ON DEFI"
-        icon:
+        icon: 
         iconHeight: 35
 
     # profile-mode
