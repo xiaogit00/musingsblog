@@ -68,6 +68,6 @@ I began writing this post at 6:26, now it's 6:43 and I am done with it.
 
 Amazing. To great days writing ahead.
 
-p.s. oh and I got this domain for $1 on namecheap btw. :blush:
+p.s. oh and I got this domain for $1 on namecheap btw. :relaxed:
 
 [^1]: If any of you are interested, I've basically set up some functions on zsh terminal on my mac so that I chain a couple of commands. One of them is newpost (which creates a new post - it takes an argument `post-slud.md` which Hugo automatically sets as the page URL as well as title), and the other one is gitpush (you can guess which set of commands this does - serious devs don't kill me).
