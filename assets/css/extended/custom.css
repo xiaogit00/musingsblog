@@ -1,3 +1,7 @@
 .logo a {
   font-family: courier;
 }
+
+.chroma {
+    background-color: unset;
+}
