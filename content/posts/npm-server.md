@@ -3,7 +3,7 @@ title: "Steps for creating an NPM server"
 date: 2021-08-16T10:33:24+08:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["node", "notes"]
+tags: ["node", "notes", "fullstackopen"]
 author: "Lei"
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -41,7 +41,8 @@ Add `"start": "node index.js"` in package.json, like so:
 ```json
 {
   "scripts": {
-    "start": "node index.js",    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",    
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
 }
 ```
