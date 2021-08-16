@@ -6,7 +6,7 @@ date: 2021-08-16T10:33:24+08:00
 tags: ["node", "notes", "fullstackopen"]
 author: "Lei"
 # author: ["Me", "You"] # multiple authors
-showToc: true
+showToc: false
 TocOpen: false
 draft: false
 hidemeta: false
