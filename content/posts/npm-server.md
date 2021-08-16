@@ -3,7 +3,7 @@ title: "Steps for creating an NPM server"
 date: 2021-08-16T10:33:24+08:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["node", "notes", "fullstackopen"]
+tags: ["node", "notes", "fullstackopenwk3"]
 author: "Lei"
 # author: ["Me", "You"] # multiple authors
 showToc: false
@@ -32,10 +32,10 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-Step 1:
+Step 1:  
 `npm init` in project folder
 
-Step 2:
+Step 2:  
 Add `"start": "node index.js"` in package.json, like so:
 
 ```json
