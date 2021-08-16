@@ -39,4 +39,4 @@ app.listen(PORT, () => {
 })
 ```
 
-The code still runs when you do `npm start`, but it upon end of code, it simply terminates, whereas if you do `app.listen`, you could inspect the output at a port. 
+The code still runs when you do `npm start`, but upon end of code, it simply terminates, whereas if you do `app.listen`, you could inspect the output at a port. 
