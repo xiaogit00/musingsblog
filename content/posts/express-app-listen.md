@@ -3,7 +3,7 @@ title: "Express App.listen"
 date: 2021-08-16T10:55:57+08:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["fullstackopenwk3"]
+tags: ["notes","fullstackopenwk3"]
 author: "Lei"
 # author: ["Me", "You"] # multiple authors
 showToc: false
@@ -39,4 +39,4 @@ app.listen(PORT, () => {
 })
 ```
 
-The code still runs when you do `npm start`, but upon end of code, it simply terminates, whereas if you do `app.listen`, you could inspect the output at a port. 
+The code still runs when you do `npm start`, but upon end of code, it simply terminates, whereas if you do `app.listen`, you could inspect the output at a port.
