@@ -3,7 +3,7 @@ title: "Steps for creating an Express Server"
 date: 2021-08-16T11:07:33+08:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["express", "fullstackopenwk3"]
+tags: ["express", "notes","fullstackopenwk3"]
 author: "Lei"
 # author: ["Me", "You"] # multiple authors
 showToc: false
