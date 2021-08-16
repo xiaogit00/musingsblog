@@ -6,7 +6,7 @@ date: {{ .Date }}
 tags: [""]
 author: "Lei"
 # author: ["Me", "You"] # multiple authors
-showToc: true
+showToc: false
 TocOpen: false
 draft: false
 hidemeta: false
