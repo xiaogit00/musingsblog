@@ -17,16 +17,16 @@ minify:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: ExampleSite
-    description: "ExampleSite description"
-    keywords: [Blog, Portfolio, PaperMod]
-    author: Me
+    title: musingsondefi.xyz
+    description: "A rookie's journey into crypto, defi, and NFTs."
+    keywords: [Blog, DeFi, NFT, Crypto]
+    author: Lei
     # author: ["Me", "You"] # multiple authors
     images: ["<link or path of image for opengraph, twitter-cards>"]
     DateFormat: "January 2, 2006"
     defaultTheme: dark # dark, light
     disableThemeToggle: false
-
+    mainSections: posts
     ShowReadingTime: true
     ShowShareButtons: true
     ShowPostNavLinks: true
@@ -76,7 +76,9 @@ params:
 
     socialIcons:
         - name: twitter
-          url: "https://twitter.com/"
+          url: "https://twitter.com/musingsondefi"
+        - name: github
+          url: "https://github.com/xiaogit00"
 
 
     analytics:
@@ -109,14 +111,19 @@ params:
         keys: ["title", "permalink", "summary", "content"]
 menu:
     main:
-        - identifier: categories
-          name: categories
-          url: /categories/
-          weight: 10
+        - identifier: everyday life
+          name: everyday life
+          url: /everyday life/
+          weight: 30
         - identifier: tags
           name: tags
           url: /tags/
+          weight: 10
+        - identifier: notes
+          name: notes
+          url: /notes/
           weight: 20
+
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
