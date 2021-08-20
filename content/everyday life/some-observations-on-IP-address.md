@@ -1,9 +1,9 @@
 ---
-title: "Added Google Analytics"
-date: 2021-08-20T09:36:41+08:00
+title: "Some Observations on IP Address"
+date: 2021-08-20T10:09:15+08:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["blogging"]
+tags: [""]
 author: "Lei"
 # author: ["Me", "You"] # multiple authors
 showToc: false
@@ -32,9 +32,12 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
+So, I've been setting up some traffic filters on Google Analytics for this site, and I realized once again that I've forgotten everything about IP addresses :blush:
 
-Just managed to add some Google Analytics to this site.
+Not getting too much into detail, but the basic observation that I've made is that everything coming from my house network has a particular IP address: 220.255.xx.xxx.
 
-Woo hoo : )
+And my Xiaomi phone 3G has another IP address: 111.61.xx.xxx.
 
-Excited to be able to view and track the growth of this site. Would need to wait 24 hours to see the changes propagated.
+When I switched my Xiaomi wifi on, it displays 220.255 again.
+
+An IP is the same across a particular router network. Great. 
