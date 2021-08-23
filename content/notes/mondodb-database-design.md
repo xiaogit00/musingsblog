@@ -3,7 +3,7 @@ title: "Mondodb Database Design"
 date: 2021-08-23T11:18:58+08:00
 # weight: 1
 # aliases: ["/first"]
-tags: [""]
+tags: ["mongodb", "database design"]
 author: "Lei"
 # author: ["Me", "You"] # multiple authors
 showToc: false
