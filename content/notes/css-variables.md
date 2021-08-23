@@ -32,7 +32,7 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-Whilst I was scrolling through Reddit, I noticed this line in the [css file for a super slick input field](https://leongeldsch.github.io/css_material_input/):
+Whilst I was scrolling through Reddit, I noticed this line in the css file for the [super slick input field above](https://leongeldsch.github.io/css_material_input/):
 
 ```css
 :root {
