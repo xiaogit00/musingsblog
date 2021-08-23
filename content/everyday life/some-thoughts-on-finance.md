@@ -17,7 +17,7 @@ disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
 hideSummary: false
-searchHidden: true
+searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
@@ -84,4 +84,4 @@ For instance Google, the giant it is today, has only gone public in 2004. To dat
 
 The 99% of the other companies, have simply disappeared into the ethers. Where is friendster? Myspace? Soundcloud? Snapchat?
 
-Looking outside of Faang, if you had held Netflix from 2008 to 2018, your returns would have been 40x. Lol. Yet, Netflix only came into mainstream consciousness at about...2016? Throughout those 10 years, many would never even have heard of Netflix. 
+Looking outside of Faang, if you had held Netflix from 2008 to 2018, your returns would have been 40x. Lol. Yet, Netflix only came into mainstream consciousness at about...2016? Throughout those 10 years, many would never even have heard of Netflix.

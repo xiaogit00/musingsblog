@@ -17,7 +17,7 @@ disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
 hideSummary: false
-searchHidden: true
+searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
@@ -40,4 +40,4 @@ And my Xiaomi phone 3G has another IP address: 111.61.xx.xxx.
 
 When I switched my Xiaomi wifi on, it displays 220.255 again.
 
-An IP is the same across a particular router network. Great. 
+An IP is the same across a particular router network. Great.

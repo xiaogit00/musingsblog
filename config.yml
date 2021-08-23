@@ -123,6 +123,10 @@ menu:
           name: notes
           url: /notes/
           weight: 20
+        - identifier: search
+          name: search
+          url: /search/
+          weight: 5
 
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
@@ -136,3 +140,8 @@ markup:
         # hl_lines: ""
         # noClasses: false
         style: monokai
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
