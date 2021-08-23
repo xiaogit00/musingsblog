@@ -37,4 +37,4 @@ So whilst I was trying to design the database for my investment tracking app, I 
 
 After a quick look around, I [discovered](https://www.mongodb.com/developer/article/mongodb-schema-design-best-practices/) that there are *no special things you need to do to design NoSQL schemas*, apart from simply treating it like you would store info in a python dictionary: through the JSON structure.
 
-An important point is, it's almost always better to store data 'pythonically' than to store it relationally (which you can, via $lookup operator, which is similar to a JOIN). There are performance overheads for the $loopup operator.
+An important point is, it's almost always better to store data 'pythonically' than to store it relationally (which you can, via $lookup operator, which is similar to a JOIN). There are performance overheads for the $lookup operator.
