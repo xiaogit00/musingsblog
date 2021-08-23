@@ -22,11 +22,11 @@ ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 cover:
-    image: "https://live.staticflickr.com/65535/51396086416_d3591ad31e_h.jpg" # image path/url
+    image: "https://res.cloudinary.com/dl4murstw/image/upload/v1629680284/Screenshot_2021-08-23_at_8.57.58_AM_sgxqnq.png" # image path/url
     alt: "<alt text>" # alt text
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
+    hidden: false # only hide on current single page
 editPost:
     URL: "https://github.com/<path_to_repo>/content"
     Text: "Suggest Changes" # edit text
