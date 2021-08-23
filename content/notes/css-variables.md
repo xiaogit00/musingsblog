@@ -46,27 +46,18 @@ Whilst I was scrolling through Reddit, I noticed this line in the css file for t
 
 And so I googled what on earth is the `:root` selector, and what on earth are the --main-blue syntax. What I learned was *incredibly* useful.
 
-`:root` is a pseudo-class[^1] that matches the root element in the document - in most cases, it is <html>. However, due to its higher specificity[^2], `:root` selector is often used to declare global CSS variables.
+### :root
+`:root` is a pseudo-class[^1] that matches the root element in the document - in most cases, it is \<html>. However, due to its higher specificity[^2], `:root` selector is often used to declare global CSS variables.
 
+### Global CSS variables
 Global CSS variables are variables used throughout the text. They're set like so: `--main-color:black` and are accessed using var() function: `color: var(--main-color)`.
 
 Super useful stuff.
 
 Within the CSS code of the input field above, we see an example of how the coder set the color palette of the entire site via the :root selector.
 
----
 
-Footnotes
 
-[^1]: a pseudo-class is a keyword added to the selector that specifies the special state of the selector. E.g. :hover can be used for actions upon hover in
+[^1]: a pseudo-class is a keyword added to the selector that specifies the special state of the selector. E.g. :hover can be used for actions upon hover in `button:hover {color:blue}`
 
-```css
-button:hover {
-  color:blue
-}
-```
-
-[^2]: Specificity refers to how the browser selects which CSS to be applied. It is a weight that is applied to a given CSS declaration. The following increases by specificity:
-1. type selector (e.g. h1)
-2. class selector (.bottom)
-3. ID selector
+[^2]: Specificity refers to how the browser selects which CSS to be applied. It is a weight that is applied to a given CSS declaration. The following increases by specificity: 1) type selector (e.g. h1), 2)class selector (.bottom), 3)ID selector
