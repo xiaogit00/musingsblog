@@ -122,6 +122,7 @@ By default, the container selector has `align items: stretch` applied to it. Thi
 
 You can make them keep their original size with `align-items: flex-start`  
 
+### `align-items: flex-start`
 
 {{< figure src="https://res.cloudinary.com/dl4murstw/image/upload/v1629759672/Screenshot_2021-08-24_at_7.01.05_AM_ldaegw.png" width="80%">}}
 
