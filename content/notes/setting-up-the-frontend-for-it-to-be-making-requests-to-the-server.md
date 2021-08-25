@@ -57,8 +57,7 @@ import React, { useState, useEffect } from 'react'
 const [streams, setStreams] = useState([])
 
 useEffect(() => {
-  axios
-    .get('http://localhost:3001/notes')
+  axios.get('http://localhost:3001/notes')
     .then(response => {
       setStreams(response.data)
     })
