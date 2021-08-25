@@ -65,3 +65,11 @@ useEffect(() => {
 }, [])
 ```
 This will set the streams variable up.
+
+#### Final Step: Installing CORS
+Without CORs, you will not be able to make that request.
+1. Within the backend repo, install cors.
+`npm install cors`
+2. then within the backend index.js, require cors:
+`const cors = require('cors')`
+`app.use(cors())`
