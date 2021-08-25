@@ -3,11 +3,11 @@ title: "Setting Up the Frontend for It to Be Making Requests to the Server"
 date: 2021-08-25T16:07:43+08:00
 # weight: 1
 # aliases: ["/first"]
-tags: [""]
+tags: ["Web Dev"]
 author: "Lei"
 # author: ["Me", "You"] # multiple authors
-showToc: false
-TocOpen: false
+showToc: true
+TocOpen: true
 draft: false
 hidemeta: false
 comments: false
@@ -64,4 +64,4 @@ useEffect(() => {
     })
 }, [])
 ```
-This will set the streams variable up. 
+This will set the streams variable up.
