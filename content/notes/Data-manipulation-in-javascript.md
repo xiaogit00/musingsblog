@@ -193,7 +193,7 @@ array.sort((a,b) =>{
     return b[1]-a[1]
 })
 ```
-Sort takes a call back function, which iterates through each item in the array. `a` refers to the nth array, whilst `b` refers to the n+1th array. Here, what i am basically saying is that, take b[1] - a[1]. If it is positive, b is sorted ahead of a. Under the hood, sort iterates through each item in the array, and uses compare function. Compare takes a-b If the result of compare function is negative, a is sorted before b. If it is postiive, b is sorted before a.
+Sort takes a call back function, which iterates through each item in the array. `a` refers to the nth array item, whilst `b` refers to the n+1th array item. Here, what i am basically saying is that, take b[1] - a[1]. If it is positive, b is sorted ahead of a. Under the hood, sort iterates through each item in the array, and uses compare function. Compare takes a-b If the result of compare function is negative, a is sorted before b. If it is postiive, b is sorted before a.
 
 And viola. Putting it all together, I get:
 
