@@ -3,7 +3,7 @@ title: "Notes on Flux Architecture And Redux"
 date: 2021-09-18T12:01:56+08:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["Redux", "flux architecture"]
+tags: ["Redux", "flux architecture", "state management"]
 author: "Lei"
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -200,17 +200,39 @@ Steps for implementing global access to store:
 `npm install react-redux`
 
 #### Step 2: Within Index.js, (or nearest common ancestor), import Provider.
-```javascript {hl_lines=[2]}
+```javascript {hl_lines=[4, 10,11]}
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { createStore } from 'redux'
-import { Provider } from 'react-redux'import App from './App'
+import { Provider } from 'react-redux'
+import App from './App'
 import noteReducer from './reducers/noteReducer'
 
 const store = createStore(noteReducer)
 
 ReactDOM.render(
   <Provider store={store}>    <App />
-  </Provider>,  document.getElementById('root')
+  </Provider>,  
+  document.getElementById('root')
 )
 ```
+And, within the JSX render, supply Provider as a component and supply the store as prop. This kind of enables you to *provide* the entire app with access to the store.
+
+#### Step 3: Within the App component, import useSelector and useDispatch
+To import:
+```javascript
+import { useSelector, useDispatch } from 'react-redux'
+```
+By using `useDispatch()` within App component, you're able to do *write* functions - e.g. `dispatch(createNote(content))` or `dispatch(toggleImportanceOf(id))`. The useDispatch hook **allows all components to make changes to the state of the redux store**.
+
+By using `useSelector()` you're able to do *read* functions - e.g. `const notes = useSelector(state=> state)`
+
+In this case, `state=> state` is simply a short hand for:
+```javascript
+(state) => {
+    return state
+}
+```
+Which means that if the state is more complex, you can do way more actions with it - i.e. breaking it down, or looking for specific properties in the state object.
+
+I'll thus conclude this part. In summary, there are a couple of concepts and primitives that are used extensively in the Redux architecture. Reducers. Stores. Actions. Providers. useSelector. useDispatch. 
