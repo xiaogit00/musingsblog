@@ -1,5 +1,5 @@
 ---
-title: "Notes on Flux Architecture And_Redux"
+title: "Notes on Flux Architecture And Redux"
 date: 2021-09-18T12:01:56+08:00
 # weight: 1
 # aliases: ["/first"]
