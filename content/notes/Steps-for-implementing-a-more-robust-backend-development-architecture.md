@@ -450,3 +450,5 @@ Trade.create(tradesData, (err, trades) => {
 module.exports = app
 
 ```
+
+That's it for this part, it's getting bit long. Onwards to Part B, where I discuss what else I do after that!
