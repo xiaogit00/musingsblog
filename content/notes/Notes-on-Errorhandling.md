@@ -6,8 +6,8 @@ date: 2021-09-24T09:37:40+08:00
 tags: ["error handling", "express", "backend"]
 author: "Lei"
 # author: ["Me", "You"] # multiple authors
-showToc: false
-TocOpen: false
+showToc: true
+TocOpen: true
 draft: false
 hidemeta: false
 comments: false
@@ -36,7 +36,7 @@ editPost:
 The hallmark of an experienced developer is his/her ability to foresee the errors and handle them appropriately. Below are some notes regarding how error handling is done in different contexts.
 
 Let's first take a look at the general *structure* of error handling.
-##Structure of error handling
+## Structure of error handling
 
 ### Within a .then().catch() block
 For instance, within a route, you want to find the noteById, and then do something.
@@ -70,7 +70,7 @@ try {
 ```
 Note what you're tryna do with the exception. First, you catch exception. Exception is an object. The try catch logic reads: try the code - if it fails, it'll return an object. Name the error object exception and pass it into your catch statement. Within it, `next()` the exception - which passes it to error handling middleware.
 
-##Types of Errors
+## Types of Errors
 
 Now, it is worthwhile to consider the problem from the perspective of the **different type** of errors you might encounter when dealing with HTTP requests.
 
@@ -105,7 +105,7 @@ Generally, when dealing with promises, it's always a good idea to add error and 
 Also, it's never a bad idea to print the obejct tha caused the exception to the console in the error handler. The reason error handler gets called might be something completely different than what you had anticipated.
 
 
-##Moving Error handling to middleware
+## Moving Error handling to middleware
 The main principle is this. Instead of handling the errors within the individual routes themselves, by specifying what to do with the errors in the catch() blocks, we can simply specify an error handler that *delegates* or *passes on* the handling to the errorHandler middleware that'll ultimately 'catch' all these errors. The way we do that is:  
 `.catch(error => next(error))`  
 
