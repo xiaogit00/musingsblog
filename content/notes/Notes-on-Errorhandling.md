@@ -33,7 +33,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-The hallmark of an experienced developer is his/her ability to foresee the errors and handle them appropriately. The below are some notes regarding how error handling is done in different contexts.
+The hallmark of an experienced developer is his/her ability to foresee the errors and handle them appropriately. Below are some notes regarding how error handling is done in different contexts.
 
 Let's first take a look at the general *structure* of error handling.
 ##Structure of error handling
