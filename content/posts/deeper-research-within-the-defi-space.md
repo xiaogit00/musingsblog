@@ -34,4 +34,4 @@ editPost:
 ---
 After a two month break from Defi to build my investment tracking application, I am back in the game. This time, I'd very much want to understand Defi on a deeper level. Defi, of course, is a sprawling discipline. In its current state, it is getting slightly closer to formalization - however, much of the technology is still experimental in nature and many projects are still 'ongoing tests in production'. When I approached it two months back, I developed a high level understanding of the different kinds of services and protocols available within Defi - but there are still many gaps.
 
-In the next few weeks, I plan to go deeper into some of the topics that have confused me in the past and hopefully arrive at a deeper insight into some of them.
+In the next few weeks, I plan to go deeper into some of the topics that have confused me in the past and hopefully arrive at deeper insight into some of them.
