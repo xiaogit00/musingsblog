@@ -18,7 +18,7 @@ minify:
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: musingsondefi.xyz
-    description: "A rookie's journey into crypto, defi, and NFTs."
+    description: "Thoughts on crypto, defi, and NFTs."
     keywords: [Blog, DeFi, NFT, Crypto]
     author: Lei
     # author: ["Me", "You"] # multiple authors
