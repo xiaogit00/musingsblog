@@ -91,7 +91,7 @@ Now, let’s take a look at how things are doing on the zkRollups side.
 Overall, most zkRollup solutions are still in development/testing, but there are specific projects leveraging on zkRollup tech in production with promising signs of success.
 
 ### zkSync
-So far, the big player in the game, zkSync, has been taking it slow. No dApps are currently being deployed to production - although testnet is already open in Phase 1, with Curve having already deployed a working testnet integration there. There is no set date yet for their Mainnet fair launch. One big developmental breakthrough for them occurred on 13 Oct, where they successfully ported over Uniswap V2 into zkSync, making it the first fully functional dApp running on a EVM-compatible zkRollup. This is significant because it would allow for easier developer onboarding, paving the way for a richer ecosystem.
+So far, the big player in the game, zkSync, has been taking it slow. No dApps are currently being deployed to production - although testnet is already open in Phase 1, with Curve having already deployed a working testnet integration there. There is no set date yet for their Mainnet fair launch. One big developmental breakthrough for the zkSync team occurred on 13 Oct, where they successfully ported over Uniswap V2 into zkSync using the zkEVM. This is significant because zkEVM would allow for easier porting over of current dApps into zkSync ecosystem.
 
 Apart from zkSync, there are also other, more specifically taylored projects based on zkRollup technology that are already in production. These projects have timelines and ambitions of their own, and their route to market entry is also different.
 
@@ -100,17 +100,17 @@ First up we have Starkware. On [l2beat](https://l2beat.com/), we see that the bi
 Coming up second we have Loopring, a zkRollup solution built specifically for the context of trading. According to L2Beat, Loopring currently has $116TVL, although 44% of it can be attributed to their LoopRing LRC token. They don't seem to have similar ambitions such as zkSync to expand into a general purpose zkRollup solution for dApps, instead it is a production version built specifically for their Loopring trading platform.
 
 ### Conclusion
-So, what can we say about the current state of affairs of L2 solutions?
+So, what can we say about the current state of affairs of L2 solutions? The overall picture is that we are still not quite there yet in terms of reaching the full potentials of L2 (benchmarked by low fees and high throughput); however, various projects, such as Arbitrum, are showing us promising signs of success. We're, in other words, **battle testing** our layer two solutions. This is of course a crucial part in building sound architecture.  
 
-If you're an average trader looking to have consistently $2 fees, then apps in the Arbitrum ecosystem are your answer. They’re not dirt cheap, but they promise Ethereum level security.
+On the side of the market, if you're an average trader looking to have consistently $2 fees, then apps in the Arbitrum ecosystem are your answer. They’re not dirt cheap, but they promise Ethereum level security.
 
-Optimism also gets the job done, although they provide a much more limited suite of Apps.
+Optimism also gets the job done too, although they provide a much more limited suite of Apps. Big names like Uniswap can be found on it.
 
 For microtransactions and people who are cost-conscious, Polygon is still the way to go. Security wise, the general perception is that it doesn’t have the rigourous standards of Ethereum Rollups - but I have not looked in-depth into this issue.
 
 ### Looking ahead:
 
-What’s exciting and in the pipeline are when solutions like zkSync, and Optimism EVM upgrades launch amongst developers and see mass deployment of dApps.
+What’s exciting and in the pipeline are when solutions like zkEVM, and Optimism EVM upgrades launch amongst developers and see mass deployment of dApps.
 
 It’s safe to say that in the foreseeable future, gas fees can be reduced by drastic proportions given these new technologies and dApps running on these layers twos.
 
