@@ -86,7 +86,7 @@ On the other hand, in the Optimistic rollup family, we have Optimism - a project
 
 One key upcoming feature of Optimism is its anticipated mainnet EVM equivalent upgrade on 11Nov. This upgrade would allow EVM compatible dApps to run one-click deployment on Optimism layer 2 - something that could potentially give them moat over Arbitrum.
 
-Now, enough of the Optimistic Rollup world - let’s look at how things are doing in the zkRollups side.
+Now, let’s take a look at how things are doing in the zkRollups side.
 
 ### zkSync
 Generally, much of zkRollups are still in development. So far, the big player in the game, zkSync, has been taking it slow. No dApps are currently being deployed to production - although testnet is already open in Phase 1, with Curve having already deployed a working testnet integration there. There is no set date yet for their Mainnet fair launch. One big developmental breakthrough for them occurred on 13 Oct, where they successfully ported over Uniswap V2 into zkSync, making it the first fully functional dApp running on a EVM-compatible zkRollup. This is significant because it would allow for easier developer onboarding, paving the way for a richer ecosystem.
