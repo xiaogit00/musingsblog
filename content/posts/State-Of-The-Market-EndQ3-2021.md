@@ -34,6 +34,8 @@ editPost:
 ---
 It's Q4 of 2021 (28th Oct), and Ethereum's gas fees are currently raging at $17USD / transaction. If you catch the right, off-peak hours such as Saturday evenings GMT +8, you could get it cheaper at $2.30USD. The problem is: will your profitable trade wait till Saturday evenings? This brings us back to our original problem. What is the current state of development of our Layer 2 solutions?
 
+{{< figure src="https://res.cloudinary.com/dl4murstw/image/upload/v1635648966/Screenshot_2021-10-31_at_10.55.10_AM_c7z6it.png" title="Layer 2 solutions manifesting on Uniswap as network options (31 Oct 2021)" >}}
+
 >## TLDR:
 > - Arbitrum is the only successful implementation of L2 solution at scale.
 > - Other projects, such as Optimism, and zkSync, are either operating at curtailed scale, or are still in development/testing
