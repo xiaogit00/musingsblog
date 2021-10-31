@@ -72,11 +72,10 @@ One interesting point of observation, as mentioned earlier, is the correlation b
 
 When the TLV of Ethereum rallied from 11 Sep, Polygon's TLV did not climb.
 
-Eth TVL:
-![Eth Rally](https://res.cloudinary.com/dl4murstw/image/upload/v1635483607/Screenshot_2021-10-27_at_7.03.25_PM_g45vke.png)
+{{< figure src="https://res.cloudinary.com/dl4murstw/image/upload/v1635483607/Screenshot_2021-10-27_at_7.03.25_PM_g45vke.png" title="Eth Rally" >}}
 
-Polygon TVL:
-![Polygon](https://res.cloudinary.com/dl4murstw/image/upload/v1635483611/Screenshot_2021-10-27_at_7.04.27_PM_tdheik.png)
+
+{{< figure src="https://res.cloudinary.com/dl4murstw/image/upload/v1635483611/Screenshot_2021-10-27_at_7.04.27_PM_tdheik.png" title="Polygon" TVL in comparison >}}
 
 Polygon, essentially, *did not grow* in terms of TVL from 11 Sep. Of course, we should not infer causation here. Further research should be done on the cause of Polygon's stagnation. But one very plausible reason is due to Arbitrum (or other Layer 2) draining all the value away from it.
 
