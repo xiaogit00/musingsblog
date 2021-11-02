@@ -8,7 +8,7 @@ author: "Lei"
 # author: ["Me", "You"] # multiple authors
 showToc: false
 TocOpen: false
-draft: false
+draft: true
 hidemeta: false
 comments: false
 description: ""
@@ -114,4 +114,4 @@ Let's see what else can Web3 do for us.
 
 Alright - up to this point, the data needs to be aggregated for a picture to emerge. Which means - this is not the tool for it.
 
-In the next post, I'll try to explore onChain Data using Dune Analytics. 
+In the next post, I'll try to explore onChain Data using Dune Analytics.
