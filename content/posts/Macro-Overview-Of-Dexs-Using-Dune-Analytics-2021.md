@@ -171,7 +171,9 @@ Bancor Network	            DEX
 Uniswap	                    DEX
 Loopring	                DEX
 ```
+
 As you can see, there are 7 aggregators, and 22 Dexs.
+
 ---
 
 ### What’s the date of the earliest record in the table?
