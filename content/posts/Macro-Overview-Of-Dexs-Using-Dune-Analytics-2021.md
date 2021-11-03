@@ -47,7 +47,7 @@ In the process, I'll document my SQL queries as well in case you want to try it 
 
 
 ### Using Dune Analytics
-Dune Analytics has a tonne of tables that you can query. In this article, I'll be using the `dex.trades` table, which is a table containing the following fields:
+Dune Analytics has a tonne of tables that you can query. In this article, I'll be using the `dex.trades` [table](https://docs.dune.xyz/data-tables/data-tables), which is a table containing the following fields:
 
 ### dex.trades table schema:
 - [date] ***block_time***
