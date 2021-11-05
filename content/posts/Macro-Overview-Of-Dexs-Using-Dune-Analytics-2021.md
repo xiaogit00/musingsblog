@@ -35,11 +35,10 @@ editPost:
 Dune analytics allows you to query on chain data using SQL queries via its web app. Although execution time is a little slow due to the large data volume (~14s for a simple query, ~1min+ for more complex ones), it is still one of the most useful products for basic on chain analysis I've used so far. The prerequisite, though, is that you would need to know a bit of SQL.
 
 In this post, I'll be taking you through a simple exploration of Dex on-chain data to uncover some macro level insights. Specifically, I will answer the following questions:  
-- What data is available in the dex.trades table?  
-- What's the total number of tokens traded across all Dexs?  
-- How many Dexs are there today?  
+- What kinds of insights can we derive from the data on Dexs?  
+- What kind of Macro level information can we get about Dex trading activities?
 - When is the first trade of each Dex?  
-- What's the total number of transactions on each dex to date?  
+- What's the total number of transactions on each Dex to date?  
 - What's the % breakdown of the number of transaction per year across Dexs?  
 - What's the average value of each transaction across Dexs?  
 
@@ -47,9 +46,9 @@ In the process, I'll document my SQL queries as well in case you want to try it 
 
 
 ### Using Dune Analytics
-Dune Analytics has a tonne of tables that you can query. In this article, I'll be using the `dex.trades` [table](https://docs.dune.xyz/data-tables/data-tables), which is a table containing the following fields:
+Dune Analytics has a tonne of tables that you can query. In this article, I'll be using the `dex.trades` [table](https://docs.dune.xyz/data-tables/data-tables). The data on dex.trades shows all transaction recorded on Dexs. You could search by contract address for the particular pool. You could rank value of the pools of similar asset type by protocol. The kinds of queries you can do are endless. Below is the table schema (field name in bold), followed by short descriptions of the field:
 
-### dex.trades table schema:
+***dex.trades table schema:***
 - [date] ***block_time***
 - [string] ***token_a_symbol*** - ‘swap from’
 - [string] ***token_b_symbol*** - ‘swap to’
@@ -57,7 +56,7 @@ Dune Analytics has a tonne of tables that you can query. In this article, I'll b
 - [int] ***token_b_amount***
 - [string] ***project*** - protocol (e.g. Uniswap)
 - [int] ***version*** - 2 or 3
-- [string] ***category*** - DEX
+- [string] ***category*** - e.g. DEX / Aggregator
 - [address] ***trader_a*** - same as tx_from
 - [address] ***trader_b*** - none if it’s to contract
 - [largeInt] ***token_a_amount_raw*** - a very large number
@@ -72,123 +71,92 @@ Dune Analytics has a tonne of tables that you can query. In this article, I'll b
 - *trace_address*
 
 
-# Data Exploration:
+## Basic Data Exploration: 29 Dexs, 3551 Unique tokens
 
-### What's the total number of tokens traded across all Dexs?
-Query:
+Let's begin with basics. Querying the table, we find that there are a total of 29 Dex protocols, out of which 22 are Dexs and 7 are Aggregators. They provide 3551 unique tokens for trading. Below are the supporting queries.
+
+>Query 1: What's the total number of tokens traded across all Dexs?
 ```SQL
 SELECT DISTINCT count(token_a_symbols)
 FROM dex.trades
 ```
-Results:  
+
+>Results:  
 `3531`
 
 There are 3531 unique tokens across all Dexs.
 
----
+>Query 2: How many different projects are there in the dex.trades table? What are their categories?
 
-### How many different projects are there in the dex.trades table?
-Query:
-```SQL
-SELECT DISTINCT project
-FROM dex.trades
-```
-Results:
-```
-0x API
-0x Native
-1inch
-1inch LP
-1inch Limit Order Protocol
-Balancer
-Bancor Network
-Clipper
-Curve
-DDEX
-DODO
-Futureswap
-Gnosis Protocol
-IDEX
-Kyber
-LINKSWAP
-Loopring
-Matcha
-Mooniswap
-Oasis
-Paraswap
-Sushiswap
-Synthetix
-Tokenlon
-Uniswap
-airswap
-dYdX
-mistX
-```
-There are 28 projects in the dex.trades table.
-
----
-
-### What are the categories of the dex trades?
-They're split between DEX and Aggregators.
-
----
-
-### Which projects are DEXs and which are aggregators?
-Query:
 ```SQL
 SELECT DISTINCT project, category
 FROM dex.trades
 ```
-Results:
+>Results:
+| **Project**                | **Category** |
+| -------------------------- | ------------ |
+| Gnosis Protocol            | DEX          |
+| Paraswap                   | Aggregator   |
+| 0x API                     | Aggregator   |
+| 1inch Limit Order Protocol | DEX          |
+| 1inch                      | Aggregator   |
+| Oasis                      | DEX          |
+| Tokenlon                   | Aggregator   |
+| Futureswap                 | DEX          |
+| mistX                      | Aggregator   |
+| 0x Native                  | DEX          |
+| Balancer                   | DEX          |
+| LINKSWAP                   | DEX          |
+| Gnosis Protocol            | Aggregator   |
+| Sushiswap                  | DEX          |
+| Clipper                    | DEX          |
+| DODO                       | DEX          |
+| Matcha                     | Aggregator   |
+| airswap                    | DEX          |
+| 1inch LP                   | DEX          |
+| Mooniswap                  | DEX          |
+| DDEX                       | DEX          |
+| Kyber                      | DEX          |
+| IDEX                       | DEX          |
+| Synthetix                  | DEX          |
+| Curve                      | DEX          |
+| dYdX                       | DEX          |
+| Bancor Network             | DEX          |
+| Uniswap                    | DEX          |
+| Loopring                   | DEX          |
+
+There are 28 projects in the dex.trades table. 22 are Dexs and 7 are Aggregators.
+
+
+# Getting a sense of historicity
+
+### IDEX was the first active DEX.
+
+The earliest Dex transaction was conducted on 9 Sep 2017, on IDEX protocol. This is found by making the following query:
+
+>Query: When is the earliest transaction on Dex conducted?
+``` SQL
+SELECT *
+FROM dex.trades
+ORDER BY block_time
+LIMIT 1
 ```
-Gnosis Protocol	            DEX
-Paraswap	                Aggregator
-0x API	                    Aggregator
-1inch Limit Order Protocol	DEX
-1inch	                    Aggregator
-Oasis	                    DEX
-Tokenlon	                Aggregator
-Futureswap	                DEX
-mistX	                    Aggregator
-0x Native	                DEX
-Balancer	                DEX
-LINKSWAP	                DEX
-Gnosis Protocol	            Aggregator
-Sushiswap	                DEX
-Clipper	                    DEX
-DODO	                    DEX
-Matcha	                    Aggregator
-airswap	                    DEX
-1inch LP	                DEX
-Mooniswap	                DEX
-DDEX	                    DEX
-Kyber	                    DEX
-IDEX	                    DEX
-Synthetix	                DEX
-Curve	                    DEX
-dYdX	                    DEX
-Bancor Network	            DEX
-Uniswap	                    DEX
-Loopring	                DEX
+
+This is the tx hash: `0x87bbc5fe23574dc757ab818a9011cf6c18bf5066f57788e6dd2bd1fc147eae25`  
+
+### Other Dexs only came in the picture in 2019. The first three Dexs were Uniswap, Kyber, and Oasis, all starting in early 2019.
+
+These are the dates where each protocol became active:
+
+>Query 3: When was the first trade of each Dex?
+```SQL
+SELECT project, min(block_time)
+FROM dex.trades
+GROUP BY project
+ORDER BY 2
 ```
 
-As you can see, there are 7 aggregators, and 22 Dexs.
-
----
-
-### What’s the date of the earliest record in the table?
-9 Sep 2017. The project is IDEX, and this is the tx hash:   0x87bbc5fe23574dc757ab818a9011cf6c18bf5066f57788e6dd2bd1fc147eae25
-
----
-
-### Where are the first 100 DEX trades from?
-They were all IDEX.
-
----
-
-### When was the first trade of each Dex?
-
-Results:
+>Results:
 ```
 IDEX        2017-09-27 22:57
 Uniswap     2019-01-01 00:02
@@ -220,18 +188,21 @@ mistX       2021-05-25 17:04
 Clipper     2021-06-26 01:59
 ```
 ---
+# Usage activity
 
-### What is the total number of transactions for each network, all time?
-Query:
+### The top three most active Dexs are of all time are Uniswap, Sushiswap, IDEX, 1Inch, and Balancer.
+
+Uniswap wins by a wide margin, boasting 72.2 million transactions on its protocol til date. Sushiswap follows behind with 5.9 million transactions.
+
+>Query: What is the total number of transactions for each network, all time?
 ```SQL
-Columns: Network, Transactions
 SELECT project, count(*) transactions
 FROM dex.trades
 GROUP BY 1
 ORDER BY 2 DESC
 ```
 
-***Results:***
+>***Results:***
 | **Project**     | **No\_of\_Transactions** |
 | --------------- | ------------------------ |
 | Uniswap         | 72227929                 |
@@ -260,13 +231,13 @@ ORDER BY 2 DESC
 | DDEX            | 46681                    |
 | Clipper         | 45349                    |
 
-
-Uniswap and Sushiswap leads the way, with 72mil and 5.2mil transactions respectively.
-
 ---
 
-### What is the percentage of total tx that occurred in 2019, 2020, 2021, across networks?
-Query:
+### Uniswap made 65% of its total transactions in 2021, compared to 87% for Sushiswap.
+
+Both Uniswap and Sushiswap have grown tremendously between last year and this year. A large portion of Sushiswap's transactions (87%) were made this year, compared to a smaller percentage for Uniswap (65%). 1Inch is also way more utilized this year at 86%. Balancer, on the other hand, saw greater usage in 2020 than 2021.
+
+>Query: What is the percentage of total tx that occurred in 2019, 2020, 2021, across networks?
 ```SQL
 WITH t1 as (
     SELECT project, COUNT(*) tx_2019
@@ -306,9 +277,7 @@ LEFT JOIN t1
 ON t4.project = t1.project
 ORDER BY 5 DESC
 ```
-***Result:***  
-*note: I converted the raw data to % in excel
-
+>***Result:***  *note: I converted the raw data to % in excel
 | **Project**                | **2019** | **2020** | **2021** | **Total tx** |
 | -------------------------- | -------- | -------- | -------- | ------------ |
 | Uniswap                    | 0.8%     | 34.1%    | 65.1%    | 72238557     |
@@ -340,13 +309,14 @@ ORDER BY 5 DESC
 | Futureswap                 | 0.0%     | 0.0%     | 100.0%   | 11860        |
 | 1inch LP                   | 0.0%     | 0.0%     | 100.0%   | 9367         |
 
-***Observations:***  
-Both Uniswap and Sushiswap have grown tremendously between last year and this year. A large portion of Sushiswap's transactions (87%) were made this year, compared to a smaller percentage for Uniswap (65%). 1Inch is also way more utilized this year at 86%. Balancer, on the other hand, saw greater usage in 2020 than 2021.
 
 ---
 
-### Total number of transactions in 2021 across networks?
-Query:
+### Uniswap is 9 times more active than Sushiswap in 2021.
+
+The top 5 most active Dexs this year are Uniswap, Sushiswap, 1Inch, 0x API, Balancer. Uniswap is 9 times more active than runner up Sushiswap.
+
+>Query: Total number of transactions in 2021 across networks?
 ```SQL
 SELECT project, COUNT(*) tx_2021
 FROM dex.trades
@@ -356,7 +326,7 @@ ORDER BY 2 DESC
 ```  
 
 
-***Results:***
+>***Results:***
 | **Project**                | **Transaction 2021** |
 | -------------------------- | -------------------- |
 | Uniswap                    | 46998361             |
@@ -387,13 +357,15 @@ ORDER BY 2 DESC
 | DDEX                       | 1068                 |
 | Oasis                      | 345                  |
 
-This chart shows that the top 5 most active Dexs this year are Uniswap, Sushiswap, 1Inch, 0x API, Balancer.
 
----
 
-### What is the average value of each transaction across networks (all time)?
 
-Query:
+# Transaction size
+What is the average transaction size on each protocol, and what does it tell us about its users? Let's find out.
+
+### The average transaction size on Curve is $175k USD, 22 times higher than on Uniswap.
+
+>Query: What is the average value of each transaction across networks (all time)?
 ```SQL
 SELECT project, ROUND(AVG(usd_amount))
 FROM dex.trades
@@ -401,7 +373,7 @@ GROUP BY 1
 ORDER BY 2 DESC
 ```
 
-Results:
+>Results:
 | **Project**                | **Avg\_Value\_per\_Tx** |
 | -------------------------- | ----------------------- |
 | Curve                      | 175111                  |
@@ -435,10 +407,11 @@ Results:
 ***Analysis:***
 The results for this query is very interesting. It tells us that although Uniswap is the most active Dex, trades happening there are actually not of very high value. On the contrary, protocols like Curve and Synthetix see an astonishing average value per transaction at more than 100kUSD, with Curve leading the way at 175k USD / tx. That is 22x larger than the average tx value on Uniswap. That is an incredible amount of money for every transaction. What does it tell us about the demographic of users using Curve? It is possible that Curve has a greater user base of whale / whale-ish individuals. At the very least, there is something interesting for us to investigate further.
 
----
+### Synthetix sees highest average value per transaction at $327708 USD in 2021.
 
-### What is the average value of each transaction across networks (this year, 2021)?
-Query:
+Looking at the data for 2021, we see that the average transaction value on Synthetix has risen sharply to $327k, topping Curve. The average transaction value on Curve this year is also higher than its overall average, by around 75k. More people are trading large volumes per transaction as they become more comfortable with Defi. The average transaction value has also increased for Uniswap.  Interestingly, for this year, the average transaction size for SushiSwap is almost twice that of Uniswap.  
+
+>*Query: What is the average value of each transaction across networks (this year, 2021)?*
 ```SQL
 SELECT project, ROUND(AVG(usd_amount))
 FROM dex.trades
@@ -447,7 +420,7 @@ GROUP BY 1
 ORDER BY 2 DESC
 ```
 
-Results:
+>Results:
 | **Project**                | **Avg\_Value\_per\_Tx** |
 | -------------------------- | ----------------------- |
 | Synthetix                  | 327708                  |
@@ -477,14 +450,12 @@ Results:
 | LINKSWAP                   | 4267                    |
 | Loopring                   | 1177                    |
 
-***Analysis:***
-From this we see that the average transaction value on Synthetix has risen sharply to 327k, topping Curve. The average transaction value on Curve this year is also higher than its overall average, by around 75k. More people are trading large volumes per transaction as they become more comfortable with Defi. The average transaction value has also increased for Uniswap.  Interestingly, for this year, the average transaction size for SushiSwap is almost twice that of Uniswap.
 
 ---
 
-## Overall Findings:
-**There are 28 active dexs/aggregators that trade a total of 3531 tokens. The first Dex transaction was conducted on 9th Sep 2017, on IDEX. The other Dexs, including Uniswap, only came into the picture in 2019. Uniswap has the highest number of transactions till date - 72,227,929, followed by SushiSwap with 5,971,121.**
+### Conclusion
+There are 28 active dexs/aggregators that trade a total of 3531 tokens. The first Dex transaction was conducted on 9th Sep 2017, on IDEX. The other Dexs, including Uniswap, only came into the picture in 2019. Uniswap has the highest number of transactions till date - 72,227,929, followed by SushiSwap with 5,971,121.
 
-**65% of all transactions on Uniswap was done in 2021 (this year), whereas 87% of Sushiswap's transactions are done this year. The average value of each transaction on Uniswap is only $7812USD - this pales in comparison to the top (Curve), of $175111 USD - showing us that there are many protocols where the average value of transaction is way higher than Uniswap. The most likely cause of this is due to slippage. Platforms like Uniswap incentivizes smaller transactions by design. Further drill down needs to be done to uncover differences in user demographic and behavior in each Dex.**
+65% of all transactions on Uniswap was done in 2021 (this year), whereas 87% of Sushiswap's transactions are done this year. The average value of each transaction on Uniswap is only $7812USD - this pales in comparison to the top (Curve), of $175111 USD - showing us that there are many protocols where the average value of transaction is way higher than Uniswap. The most likely cause of this is due to slippage. Platforms like Uniswap incentivizes smaller transactions by design. Further drill down needs to be done to uncover differences in user demographic and behavior in each Dex.
 
-That's all for this series, I hope you've enjoyed the analysis. Stay tuned for Part 2 as we drill down further into on-chain data for Dexs.
+I hope you've enjoyed this data exploration. Stay tuned for the next part as we dig deeper into the data. 
