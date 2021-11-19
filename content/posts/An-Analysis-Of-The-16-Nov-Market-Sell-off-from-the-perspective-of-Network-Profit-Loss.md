@@ -47,7 +47,7 @@ We see that generally, there will be spikes in NPL during local tops. In mid-May
 Fast forward a couple of months to late September, we observe Batch 3 Profit takers taking profits. Despite missing the local top of 5th September and seeing prices going down to 2.8k, Batch 3 profit takers decided that it's better to take profits then than to expose themselves to the risk of Eth falling further. In doing so, they've missed a further (rather unexpected tbh) rally of the last 2 months, from September to mid November - but maintained an overall profit from their trades.
 
 ### 15 Nov Sell-Off
-On 15 Nov, we observe a huge NPL spike on 15 Nov, the value amounting to 9.91Bn. It turned out that this was caused by Ethereum foundation transferring [20000 Eth (worth $6 Bn) to Kraken](https://fa.news/articles/ethereum_foundation_sells_6_b_worth_of_ether_to_kraken-62147/), followed by a ['mysterious whale'](https://www.fxstreet.com/cryptocurrencies/news/ethereum-foundation-moves-20-000-eth-to-kraken-increasing-risks-of-sell-off-202111121410) that also sold 2b worth of Eth.
+On 15 Nov, we observe a huge NPL spike with a value amounting to 9.91Bn. It turned out that this was caused by Ethereum foundation transferring [20000 Eth (worth $6 Bn) to Kraken](https://fa.news/articles/ethereum_foundation_sells_6_b_worth_of_ether_to_kraken-62147/), followed by a ['mysterious whale'](https://www.fxstreet.com/cryptocurrencies/news/ethereum-foundation-moves-20-000-eth-to-kraken-increasing-risks-of-sell-off-202111121410) that also sold 2b worth of Eth.
 
 {{< figure src="https://res.cloudinary.com/dl4murstw/image/upload/v1637309585/Screenshot_2021-11-19_at_2.52.30_PM_pikjlz.png" title="" >}}
 
