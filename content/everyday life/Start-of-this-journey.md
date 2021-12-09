@@ -32,7 +32,7 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-So yes, an update - I'll be beginning my role as a developer advocate for Covalent. It's termed developer relations internally (and externally) because the word advocate or evangelism is probably not *objective sounding* enough, which of course isn't great. But I'd like to think of it as advocate because relations is a bit soft - no, I am not just building relations with you, I am trying to *convince* you of something.
+So yes, an update - I'll be beginning my role as a developer advocate for Covalent. It's termed developer relations internally (and externally) because the word advocate or evangelism is probably not *objective sounding* enough, which of course is an important consideration from the public front. You don't want to repel when you need to attract. But I'd like to think of it as advocate because relations is a bit soft - no, I am not just building relations with you, I am trying to *convince* you of something.
 
 
 But in any case, the objectives are the same. Bring about more awareness of the benefits of Covalent to the developer community, and either resolving issues for them, or, taking their feedback internally to build a better product.
@@ -45,4 +45,4 @@ Third - and this is an important add on - understand what Covalent API *doesn't*
 
 Forth - understanding the scale at which developers are using other products, and asking why.
 
-All my efforts in the first few months need to be aligned to these goals, arranged in order of importance. 
+All my efforts in the first few months need to be aligned to these goals, arranged in order of importance.
