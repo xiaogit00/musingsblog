@@ -8,7 +8,7 @@ author: "Lei"
 # author: ["Me", "You"] # multiple authors
 showToc: false
 TocOpen: false
-draft: true
+draft: false
 hidemeta: false
 comments: false
 description: ""
@@ -73,6 +73,6 @@ So the way I see it is - there's no reason to ape into this project. I am not ca
 
 And that is because I don't have a checklist or framework for approaching how to ape into coins or NFTs.
 
-I think a lot of it boils down to being an early adopter - a power user of the protocol. Then, you'd be able to see the value. 
+I think a lot of it boils down to being an early adopter - a power user of the protocol. Then, you'd be able to see the value.
 
 Perhaps I should try, then.
