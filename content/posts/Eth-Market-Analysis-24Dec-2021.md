@@ -3,7 +3,7 @@ title: "Eth Market Analysis 24Dec 2021"
 date: 2021-12-24T14:35:14+08:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["Eth"]
+tags: ["Eth", "Due Diligence"]
 author: "Lei"
 # author: ["Me", "You"] # multiple authors
 showToc: false
@@ -111,4 +111,4 @@ In any case, it's not a good time to be buying into Eth.
 
 If I have the balls, I should go and short it. But I don't have enough conviction.
 
-But let's say, that my prediction is that Eth price movement might move upwards to 4300 in a week or two, before dropping back down and going into bear territory. Let's see how that pans out in a week. 
+But let's say, that my prediction is that Eth price movement might move upwards to 4300 in a week or two, before dropping back down and going into bear territory. Let's see how that pans out in a week.

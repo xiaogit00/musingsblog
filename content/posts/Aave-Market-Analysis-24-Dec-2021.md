@@ -3,7 +3,7 @@ title: "Aave Market Analysis 24 Dec 2021"
 date: 2021-12-24T17:33:33+08:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["Aave"]
+tags: ["Aave", "Due Diligence"]
 author: "Lei"
 # author: ["Me", "You"] # multiple authors
 showToc: false
@@ -92,4 +92,4 @@ Volume is relatively bullish, although exchange inflow and social volume signifi
 
 Aave seems to be in an upward momentum. In the short term, there might be a small bearish pull. Because of this, it's probably a good idea to set a limit buy for a little lower. But however, whales and exchange outflow suggest that there might be a 3 month - 7 month swing to be made.
 
-It's long for me. Probably set a limit for $210 on Gemini. 
+It's long for me. Probably set a limit for $210 on Gemini.
