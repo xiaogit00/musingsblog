@@ -152,4 +152,6 @@ Barely a dip.
 
 ## Conclusion
 
-It seems like the largest falls are in Tech, with financial services really doing quite well.
+Overall, the US markets have seen a period of astonishing growth. Inflation figures are currently at 7% and we'll most likely expect a downturn coming. Several areas, such as the growth stocks as well as Fintech, have already taken the hit. We'd expect the fall to be rather drastic for most of them.
+
+The general projection for SNP500 is also likely to be down severely. 
