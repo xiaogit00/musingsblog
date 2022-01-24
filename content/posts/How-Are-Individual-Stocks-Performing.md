@@ -105,7 +105,7 @@ Adobe fell drastically - 38%.
 ## Netflix
 
 ![](https://res.cloudinary.com/dl4murstw/image/upload/v1643000359/Screenshot_2022-01-24_at_12.59.13_PM_te5azo.png)
-Blood on the streets - 73% fall. But to be fair, the last mile pump was inflated to begin with.
+Blood on the streets - 27% fall. But to be fair, the last mile pump was inflated to begin with.
 
 ## SalesForce
 ![](https://res.cloudinary.com/dl4murstw/image/upload/v1643000538/Screenshot_2022-01-24_at_1.02.11_PM_tyn820.png)
@@ -154,4 +154,4 @@ Barely a dip.
 
 Overall, the US markets have seen a period of astonishing growth. Inflation figures are currently at 7% and we'll most likely expect a downturn coming. Several areas, such as the growth stocks as well as Fintech, have already taken the hit. We'd expect the fall to be rather drastic for most of them.
 
-The general projection for SNP500 is also likely to be down severely. 
+The general projection for SNP500 is also likely to be down severely.
