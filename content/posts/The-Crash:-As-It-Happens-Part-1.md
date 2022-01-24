@@ -36,20 +36,20 @@ This crash was a long time coming. I mean, if you look at this chart, what do yo
 
 ![](https://res.cloudinary.com/dl4murstw/image/upload/v1642833068/Screenshot_2022-01-22_at_2.30.03_PM_ydskyg.png)
 
-Exactly. I see hyperinflated and unsustainable growth. S&P went from 800 in 2009 to the 4700 it was as of a month ago. That's almost a 6x increase. For an index.
+Exactly. I see hyperinflated and unsustainable growth. S&P went from $800 in 2009 to the $4700 it was as of a month ago. That's almost a 6x increase. For an index.
 
 The flash crash of March 2020 was...actually nothing. It was barely a correction - yes,  it rebounded faster than it fell. In previous market crashes, the market takes around 2/3 years to recover to ATH.
 
-Within a span of two years, S&P rose from 2700 to 4700 - close to 80% increase. Classic late bull cycle indication.
+Within a span of two years, S&P rose from $2700 to $4700 - close to 80% increase. Classic late bull cycle indication.
 
 Sometime, somehow, we all know this party is going to stop. It was just a question of when. The cheap money from Covid managed to sustain this beast for two years longer, but that too, had to end.
 
 ### 2001 - 2012 in retrospect
 ![](https://res.cloudinary.com/dl4murstw/image/upload/v1642833846/Screenshot_2022-01-22_at_2.44.00_PM_ayyby4.png)
 
-In 2000 June, the Dot Com bubble is beginning to pop. S&P fell from 1500 in June 2000 to merely 750 by Jan 2003 - a 50% decrease. In this crash, it took 2.5 years for the market to bottom out.
+In 2000 June, the Dot Com bubble is beginning to pop. S&P fell from $1500 in June 2000 to merely $750 by Jan 2003 - a 50% decrease. In this crash, it took 2.5 years for the market to bottom out.
 
-The crash of 2008 was equally disastrous - just when markets tipped over the psychological barrier of 1500, it plunged to around 700 within a span of a year. Similarly, it was a 60% drop from ATH, whereas the bottoming out process took just a year. It took the markets 4 years - Jan 2013 - to reach pre-crash levels.
+The crash of 2008 was equally disastrous - just when markets tipped over the psychological barrier of $1500, it plunged to around $700 within a span of a year. Similarly, it was a 60% drop from ATH, whereas the bottoming out process took just a year. It took the markets 4 years - Jan 2013 - to reach pre-crash levels.
 
 ### Prediction of what might happen
 
@@ -67,7 +67,7 @@ Below, I paint a hypothethetical scenario - the fast bottoming out.
 
 ![](https://res.cloudinary.com/dl4murstw/image/upload/v1642982932/Screenshot_2022-01-24_at_8.03.30_AM_ljqv96.png)
 
-At the very least, I foresee that a real crisis - assuming that the sharp fall this time is a sign of a 'real' one instead of a transitory one - will wipe away at least all of the covid gains. Coming from an ATH of 4800, it is likely - 70% chance - that markets would fall to (0.5*4800=) $2400. One thing I learned is to not underestimate the volatility of markets. They could climb as fast as they can free fall.
+At the very least, I foresee that a real crisis - assuming that the sharp fall this time is a sign of a 'real' one instead of a transitory one - will wipe away at least all of the covid gains. Coming from an ATH of $4800, it is likely - 70% chance - that markets would fall to (0.5*4800=) $2400. One thing I learned is to not underestimate the volatility of markets. They could climb as fast as they can free fall.
 
 The fast bottoming out scenario paints a picture where the market sharply bottoms out within the next 6 months, before going into cautious recovery.
 
