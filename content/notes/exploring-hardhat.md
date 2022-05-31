@@ -6,8 +6,8 @@ date: 2022-05-31T16:33:38+08:00
 tags: ["Hardhat", "Web3", "Solidity", "Smart contracts"]
 author: "Lei"
 # author: ["Me", "You"] # multiple authors
-showToc: false
-TocOpen: false
+showToc: true
+TocOpen: true
 draft: false
 hidemeta: false
 comments: false
