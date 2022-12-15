@@ -39,13 +39,12 @@ I found a new workflow, that leverages on the [python mailmerge package](https:/
 
 Here's the new workflow:
 
-1. Create your email database in Sheets, and download as csv. Use the following fields: `email`, `name`,etc.
-2. Open Bash, `cd mailmerge`
-3. Drag csv into folder, rename as `mailmerge_database.csv`
-4. Edit `mailmerge_template.txt`
-5. Run `mailmerge` to dry run. 
-6. Run `mailmerge --no-limit` to dry run again
-7. Run `mailmerge --no-dry-run`
-8. Run `mailmerge --no-dry-run --no-limit`
+1. Open Bash, `cd mailmerge` && `code .`
+2. Go to `mailmerge_database.csv` and paste the info inside from whereever. Use the VSCode csv plugin.
+3. Edit `mailmerge_template.txt` or pick the right template
+4. Run `mailmerge` to dry run. 
+5. Run `mailmerge --no-limit` to dry run again
+6. Run `mailmerge --no-dry-run`
+7. Run `mailmerge --no-dry-run --no-limit`
 
 Amazing. 
