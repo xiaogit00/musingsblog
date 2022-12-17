@@ -46,7 +46,8 @@ editPost:
 
 ---
 
-# Changing Domain 
+## Changing Domain  
+
 1. Go to Netlify `Site Setting -> Domain Management`
 
 2. Select `Add custom domain` -> select Verify 
