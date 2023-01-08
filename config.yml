@@ -18,7 +18,7 @@ minify:
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: musingsondefi.xyz
-    description: "In depth research in crypto, defi, and NFTs."
+    description: "Thoughts on tech, life, and everything else in between."
     keywords: [Blog, DeFi, NFT, Crypto]
     author: Lei
     # author: ["Me", "You"] # multiple authors
@@ -72,7 +72,7 @@ params:
     # home-info mode
     homeInfoParams:
         Title: "__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡| ̲▫̲͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.___."
-        Content: In depth research in crypto, defi, and NFTs
+        Content: Thoughts on web3, tech, life, and everything else in between
 
     socialIcons:
         - name: twitter
