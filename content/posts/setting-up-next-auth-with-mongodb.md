@@ -261,6 +261,8 @@ And that is about it! You should be able to do the following:
 #### Step 10: 
 Within the .env file, you'll need to input your GOOGLE_ID and GOOGLE_SECRET. These are created from the Google Cloud Console API credentials. If you haven't set them up, follow the steps [here](https://blog.openreplay.com/user-authentication-with-google-next-auth/#:~:text=To%20get%20Google%20access%20credentials,%E2%80%9D%2C%20click%20on%20this%20button.). 
 
+This will enable you to sign in via the classic Google Oauth. 
+
 ### (Optional) Having your own Signin page
 If you want to create sign in pages of your own style, add the following in `[...nextauth].js`
 ```
