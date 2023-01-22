@@ -275,6 +275,7 @@ pages: {
     newUser: '/auth/new-user' // New users will be directed here on first sign in (leave the property out if not of interest)
   }
 ```
+Be sure to create the actual `signIn.ts` page in `pages/auth/signIn.ts`. The URI `api/auth/signIn` will direct to this page instead of the default page. 
 
 ### Conclusion
 
