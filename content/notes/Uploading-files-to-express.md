@@ -39,7 +39,7 @@ All the times that I've learned backend development, I was mainly handling JSON 
 
 Which is why, when I tried sending a POST request to an express backend with a body that contains a File data type, this error occurred: 
 
-````
+```
 request entity too large
 PayloadTooLargeError: request entity too large
 ```
@@ -55,7 +55,7 @@ The reason is because when you make a POST request, you have to encode the data 
 There are 3 types of encoding: 
 - `application/x-www-form-urlencoded` (default)
 - `multipart/form-data`
-- text/plain 
+- `text/plain` 
 
 You just have to use the multipart encoding whenever you're sending file data. 
 
