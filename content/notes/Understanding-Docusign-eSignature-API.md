@@ -258,6 +258,15 @@ So, the final part is about creating the actual "SignHere" fields in the documen
 
 But the main idea here is that you'll need to create `tabs` first using the `docusign.Signhere.constructFromObject({})` method. 
 
+For the time being, here's some supplementary info on how to locate the anchors at the right places on the page: 
+
+*Best practices*
+*One common approach to anchor tagging is to use special strings that don’t appear anywhere else in the document as the anchorString property for anchor tagging, then setting the color of these strings to match the document background, making them invisible to recipients. This enables you to easily attach tabs to many places in your documents without disrupting the signing experience for your recipients.*
+
+*For example, the string \s1\ could be used to indicate where signature tabs for the first recipient should be placed, and \i2\ could be used to indicate where initial tabs for the second recipient go.*
+
+Ah playing around with it slightly, I realized that in the example PDF document, there's actually an invisible string `/sn1/` set to white color lol. So the signature can replace the string here. Hacky but brilliant. 
+
 After you've created the Signhere tabs, you assign it to the right recipient using `docusign.Tabs.constructFromObject`, and then assign it to your signer1 object: `signer1.tabs=signer1Tabs`. 
 
 Finally, you define the recipients of your envelop:
@@ -312,3 +321,4 @@ Finaly, you call the EnvelopesAPI create method, which sends the envelope to you
 This is amazing. I actually this is about it for the integration, docusign takes care of the rest of the signature request lifecycle. 
 
 Time to try integrating it into my app and giving it a spin!
+
