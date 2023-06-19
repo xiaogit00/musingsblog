@@ -3,7 +3,7 @@ title: "Basic Markdoc Implementation in React"
 date: 2023-06-19T13:05:22+08:00
 # weight: 1
 # aliases: ["/first"]
-tags: [""]
+tags: ["markdoc"]
 author: "Lei"
 # author: ["Me", "You"] # multiple authors
 showToc: false
