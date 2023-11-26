@@ -64,6 +64,6 @@ We know that deep down, Liu Cixin craves for truth. He weaves these truths as sp
 *'I don't have much to say except a warning. Life reached an evolutionary milestone when it climbed onto land from the ocean, but those first fish that climbed onto land ceased to be fish. Similarly, when humans truly enter space and are freed from the Earth, they cease to be human."*
 
 
-Deterrence, an artificial world, a narrative of the world as consisting first of 11 dimensions, but having already collapsed into an inferior one of three-dimensional in which we currently inhabit, and will ultimately collapse into a one-dimensional singularity. That is...just an immaculate idea.
+Deterrence, an artificial world, a narrative of the world as consisting first of eleven dimensions, but having already collapsed into an inferior one of three-dimensions in which we currently inhabit, the universe will further shrink into a singularity. That is...just an immaculate idea.
 
 As I snap back into my reality, living with my dad and a Philippino tenant called Pedro at Block 247 Bukit Batok East Ave 5 in Singapore, I have never felt so situated in the present before. In the expansive depth of time, what ultimately matters? Perhaps nothing, and perhaps everything. The world around feels surreal when I walk through the park near my house after the novel. Time is a strange thing. Really strange. 
