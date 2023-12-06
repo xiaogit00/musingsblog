@@ -36,7 +36,7 @@ Ever since I broke up with my girlfriend, I've been familiarizing myself with th
 
 Every evening, I stare at the Wall. The wall is hard and rice white, with a marble like finish. It stares back at me, with a gaze that can only be described as cold and unrelenting. 
 
-I tell myself that that's what breakups are. You have to stare at the wall. It's not the most comfortable thing, but it's better than the other alternatives. sub-par dates, Hinge doom scrolling, frivolous (and wrong) connections - all time suckers. 
+I tell myself that that's what breakups are. You have to stare at the wall. It's not the most comfortable thing, but it's better than the other alternatives. Sub-par dates, Hinge doom scrolling, frivolous (and wrong) connections - all time suckers. 
 
 Yes, it's a probabilistic process, or so I've learned. But who knew probabilities can hurt so much - aren't they just some kind of ratio. The wall, on the other hand, is forever one. 
 
