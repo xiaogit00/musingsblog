@@ -46,3 +46,8 @@ In this class of vulnerability, the main source of error is bank.com's html code
 In another variant of this attack, a user uploads a script tag into a plain text user input area - the so-called Samy worm. Whenever visitors land on Samy's homepage, the script is ran, and user's cookies can be sent. This is also known as a **persistent XSS**. Worth noting is how scripts can also be ran via img tags, such as the following:
 
 `<img src="javascipt:alert('xss')/>`
+
+Whilst googling around, I've also managed to see a real life example of this: [XSS on TikTok](https://hackerone.com/reports/968082). It's certainly interesting to see an example of XSS in action - and to see the process of a user submitting a bug, the team responding and triaging the issues over the next few days, eventually raising its severity from medium to high. 
+
+As a web dev, then, it's important then to keep a few things in mind: **don't reflect query values in your HTML code**. That'll leave your web app vulnerable to XSS attacks. You should be careful of this for all pages. 
+
