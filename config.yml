@@ -1,7 +1,8 @@
 baseURL: "https://www.musingsondefi.xyz/"
 title: Musings On Defi
-paginate: 5
-theme: hugo-PaperMod
+pagination:
+  pagerSize: 10
+theme: PaperMod
 enableEmoji: true
 
 enableRobotsTXT: true

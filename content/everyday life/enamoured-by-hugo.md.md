@@ -62,8 +62,6 @@ And if I need to embed a video or a tweet, I can do so easily:
 
 {{< youtube id="hEAl3QTkehc" autoplay="true" >}}
 
-{{< twitter 1425785212592541702 >}}
-
 I began writing this post at 6:26, now it's 6:43 and I am done with it.
 
 Amazing. To great days writing ahead.
