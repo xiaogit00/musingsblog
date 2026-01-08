@@ -113,7 +113,7 @@ def train(model, optimizer, loss_fn, train_loader, val_loader, epochs=20, device
 
 
 ```
-So I was trying to troubleshoot what is wrong with this code. The first thing is that I am defining targets twice in the validation loop. I need to take the second one out. Then, apparently, targets need to be cast to `long`, like so: 
+So I was trying to troubleshoot what is wrong with this code. The first thing is that I am defining targets twice in the validation loop (line 31). I need to take that one out. Then, apparently, targets need to be cast to `long`, like so: 
 
 `targets = targets.to(device).long()`
 
