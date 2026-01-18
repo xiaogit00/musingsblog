@@ -1,6 +1,7 @@
 ---
 title: "Core Takeaways From the First FT5011 Lecture"
 date: 2026-01-18T10:38:18+08:00
+math: true
 # weight: 1
 # aliases: ["/first"]
 tags: ["ft5011", "deep-learning"]
