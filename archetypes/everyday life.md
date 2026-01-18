@@ -1,6 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title}}"
 date: {{ .Date }}
+math: true
 # weight: 1
 # aliases: ["/first"]
 tags: [""]
