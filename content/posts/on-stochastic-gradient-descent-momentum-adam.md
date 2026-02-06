@@ -94,7 +94,7 @@ The result is that you get -5/5 which is -1. If your gradient is 100, you also g
 **The full Adam**  
 The full adam formula combines both the momentum idea as well as the normalization idea. This is the final formula:
 
-$$\phi_{t+1} = \phi_t - \alpha \cdot \frac{\tilde{m}_{t+1}}{\sqrt{\tilde{v}_{t+1}} + \epsilon}$$
+$$\phi_{t+1} = \phi_t - \alpha \cdot \frac{\tilde{m_{t+1}}}{\sqrt{\tilde{v_{t+1}}} + \epsilon}$$
 
 I'll decompose some of the terms here slowly. So from this, we can see that the previous gradient $\tilde{m}_{t+1}$ is divided by itself stripped of the sign ($\sqrt{\tilde{v}_{t+1}}$), so this is normalization. However, you might have noticed that there are tilde signs on top of each 'm' and 'v' . The reason is because we've modified the functions a little bit. 
 
@@ -104,62 +104,56 @@ $$m_{t+1} = \beta \cdot m_t + (1-\beta) \sum_{i \isin \beta_t}\frac{\delta l_i[\
 
 This stays the same. We add a new $v_{t+1}$ term with a new parameter $\gamma$ that helps control the momentum of this term as well:
 
-$$v_{t+1} = \gamma \cdot v_t + (1-\gamma) \sum_{i \isin \gamma_t}(\frac{\delta l_i[\phi_t]}{\delta \phi})^2$$
+$$v_{t+1} = \gamma \cdot v_t + (1-\gamma) \sum_{i \isin \beta_t}(\frac{\delta l_i[\phi_t]}{\delta \phi})^2$$
 
 This is essentially saying, how much of the previous iterations of itself do we want to consider as the denominator. 
 
 Now, we add this important but simple modification such that we don't encounter the 'cold start' problem (where $m_0=0$ will result in a perpetually small $m_1$ update term):
 
-$$\tilde{m}_{t+1} = \frac{m_{t+1}}{1-\beta^{t+1}}$$
-$$\tilde{v}_{t+1} = \frac{v_{t+1}}{1-\gamma^{t+1}}$$
+$$\tilde{m_{t+1}}=\frac{m_{t+1}}{1-\beta^{t+1}}$$
+$$\tilde{v_{t+1}} = \frac{v_{t+1}}{1-\gamma^{t+1}}$$
 
 What this does is this. Consider a case where B = 0.9. At t=0, $m_t=0$ since there's no previous gradient, so:
 
-$$
-\begin{aligned}
-m_1 &= \beta \cdot m_0 + (1-\beta) D \\\\
-&=0.9 \cdot 0 + (1-0.9) D \\\\
-&=0.1 D 
-\end{aligned}
-$$
+
+$$m_1 = \beta \cdot m_0 + (1-\beta) D $$
+$$=0.9 \cdot 0 + (1-0.9) D $$
+$$=0.1 D $$
+
 
 *...doing some bias correction...*
-$$
-\begin{aligned}
-\tilde{m}_{t+1} &= \frac{\beta \cdot m_t + (1-\beta) \sum_{i \isin \beta_t}\frac{\delta l_i[\phi_t]}{\delta \phi}}{1-\beta^{t+1}} \\\\
-\tilde{m}_{1} &= \frac{\beta*0 + (1-\beta)D}{1-\beta^{0+1=1}} \\\\
-&= \frac{ \beta*0 }{ 1 - \beta} + \frac{(1 - \beta) D} {1-\beta}\\\\
-&= D
-\end{aligned}
-$$
+
+$$\tilde{m_{t+1}} = \frac{\beta \cdot m_t + (1-\beta) \sum_{i \isin \beta_t}\frac{\delta l_i[\phi_t]}{\delta \phi}}{1-\beta^{t+1}}$$
+
+$$\tilde{m_{1}} = \frac{\beta*0 + (1-\beta)D}{1-\beta^{0+1=1}} $$
+
+$$= \frac{ \beta*0 }{ 1 - \beta} + \frac{(1 - \beta) D} {1-\beta}$$
+$$= D$$
+
 
 So essentially, all you're keeping is the effects of the entire D term, and not its past! 
 
 Let's work through an example of $m_2$:
 
-$$
-\begin{aligned}
-m_2 &= \beta \cdot m_1 + (1-\beta) D \\\\
-&=0.9 \cdot 0.1D + (1-0.9) D \\\\
-&=0.19 D 
-\end{aligned}
-$$
+
+$$m_2 = \beta \cdot m_1 + (1-\beta) D $$
+$$=0.9 \cdot 0.1D + (1-0.9) D $$
+$$=0.19 D $$
+
 
 *...doing some bias correction...*
-$$
-\begin{aligned}
 
-\tilde{m}_{t+1} &= \frac{\beta \cdot m_t + (1-\beta) \sum_{i \isin \beta_t}\frac{\delta l_i[\phi_t]}{\delta \phi}}{1-\beta^{t+1}} \\\\
 
-\tilde{m}_{2} &= \frac{\beta*m_1 + (1-\beta)D}{1-\beta^{2}} \\\\
+$$\tilde{m_{t+1}} = \frac{\beta \cdot m_t + (1-\beta) \sum_{i \isin \beta_t}\frac{\delta l_i[\phi_t]}{\delta \phi}}{1-\beta^{t+1}} $$
 
-&= \frac{ \beta*0.19D }{ 1 - \beta^{2}} + \frac{(1 - \beta) D} {1-\beta^{2}}\\\\
+$$\tilde{m_{2}} = \frac{\beta*m_1 + (1-\beta)D}{1-\beta^{2}} $$
 
-&= \frac{ 0.9*0.19D }{ 1 - 0.81} + \frac{(1 - 0.9) D} {1-0.81}\\\\
-&= 0.473D + 0.526D \\\\
-&= 1.0000000000000002
-\end{aligned}
-$$
+$$= \frac{ \beta*0.19D }{ 1 - \beta^{2}} + \frac{(1 - \beta) D} {1-\beta^{2}}$$
+
+$$= \frac{ 0.9*0.19D }{ 1 - 0.81} + \frac{(1 - 0.9) D} {1-0.81}$$
+$$= 0.473D + 0.526D $$
+$$= 1.0000000000000002D$$
+
 
 
 We observe a couple of things here. In the third line of the above math block, we see $\tilde{m_2}$ being decomposed into 2 terms. The first term is essentially the momentum term. The second term is the current gradient. We ultimately see the effects of this as favouring the second term slightly, whilst still retaining a significant chunk of the info from the first term. 
