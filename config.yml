@@ -1,5 +1,5 @@
-baseURL: "https://www.musingsondefi.xyz/"
-title: Musings On Defi
+baseURL: "https://blog.minimumloss.xyz/"
+title: Minimum Loss
 pagination:
   pagerSize: 10
 theme: PaperMod
@@ -18,9 +18,9 @@ minify:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: musingsondefi.xyz
-    description: "Thoughts on tech, life, and everything else in between."
-    keywords: [Blog, DeFi, NFT, Crypto]
+    title: blog.minimumloss.xyz/
+    description: "Thoughts on AI, life, and everything else in between."
+    keywords: [Blog, AI, Deep Learning, ML]
     author: Lei
     # author: ["Me", "You"] # multiple authors
     images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -51,14 +51,14 @@ params:
         safari_pinned_tab: "<link / abs url>"
 
     label:
-        text: "MUSINGS ON DEFI"
+        text: "Minimum Loss"
         icon:
         iconHeight: 35
 
     # profile-mode
     profileMode:
         enabled: false # needs to be explicitly set
-        title: Musings On Defi
+        title: Minimum Loss
         subtitle: "This is subtitle"
         imageUrl: "https://static.thenounproject.com/png/190536-200.png"
         imageWidth: 120
@@ -73,11 +73,9 @@ params:
     # home-info mode
     homeInfoParams:
         Title: "__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡| ̲▫̲͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.___."
-        Content: Thoughts on web3, tech, life, and everything else in between
+        Content: Thoughts on AI, life, and everything else in between
 
     socialIcons:
-        - name: twitter
-          url: "https://twitter.com/musingsondefi"
         - name: github
           url: "https://github.com/xiaogit00"
 
